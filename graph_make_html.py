@@ -8,7 +8,7 @@ import webbrowser
 
 
 def create_static_highlight_visible(edges_file='nba_active_player_edges.csv',
-                                    community_file='nba_player_communities_ml_optimized.csv'):
+                                    community_file='nba_player_communities_ensemble_optimized.csv'):
     print("1. 正在读取数据...")
     if not os.path.exists(edges_file) or not os.path.exists(community_file):
         print("错误：找不到文件，请确认路径。")
