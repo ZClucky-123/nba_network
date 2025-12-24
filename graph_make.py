@@ -229,14 +229,14 @@ def analyze_nba_communities_ml_enhanced(input_file='nba_active_player_edges.csv'
 
     nx.draw_networkx_edges(G, pos, edgelist=edges_to_draw, width=widths, alpha=0.2, edge_color='gray')
 
-    plt.title("NBA Active Player Communities (Optimized with Voting Ensemble & K-Fold)", fontsize=15)
+    plt.title("NBA Active Player Communities ", fontsize=15)
     plt.axis('off')
 
-    plt.savefig('nba_communities_ensemble_optimized.png', bbox_inches='tight', dpi=300)
+    plt.savefig('nba_communities.png', bbox_inches='tight', dpi=300)
     print("图片已保存: nba_communities_ensemble_optimized.png")
 
     df_out = pd.DataFrame(community_data)
-    df_out.to_csv('nba_player_communities_ensemble_optimized.csv', index=False)
+    df_out.to_csv('nba_player_communities.csv', index=False)
     print("名单已保存: nba_player_communities_ensemble_optimized.csv")
 
 
